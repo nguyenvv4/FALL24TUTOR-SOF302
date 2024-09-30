@@ -19,6 +19,7 @@
     <td>address</td>
     <td>age</td>
     <td>Status</td>
+    <td>Class name</td>
 </tr>
 </thead>
 <tbody>
@@ -29,6 +30,7 @@
         <td>${sinhVien.address}</td>
         <td>${sinhVien.age}</td>
         <td>${sinhVien.status}</td>
+        <td>${sinhVien.className}</td>
         <td><a href="">Xoa</a></td>
         <td><a href="">Detail</a></td>
     </tr>

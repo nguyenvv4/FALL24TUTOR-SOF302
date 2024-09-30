@@ -11,11 +11,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "sinh_vien")
-public class SinhVien {
+public class SinhVienViewModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
@@ -26,9 +24,6 @@ public class SinhVien {
 
     private String status;
 
-    // trong csdl ho_ten => ánh xạ k cần @column : hoTen
-
-    @ManyToOne
-    @JoinColumn(name = "lop_hoc")
-    private LopHoc lopHoc;
+    @Column(name = "class_name")
+    private String className;
 }
